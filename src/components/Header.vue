@@ -1,15 +1,17 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <header class="header">
+    <nav>
+        <ul>
+            <li><router-link to="/">Accueil</router-link></li>
+            <li><router-link to="/a-propos">A propos</router-link></li>
+        </ul>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Header'
 }
 </script>
 
